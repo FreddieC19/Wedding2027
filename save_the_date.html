@@ -14,10 +14,13 @@
 <style>
   table, td, div, p, a, h1, h2 { font-family: Georgia, 'Times New Roman', serif !important; }
   /* Outlook (Word engine) can't overlap or tilt, so the Polaroids sit side by side at a fixed width */
-  .pol { width: 270px !important; margin: 0 !important; }
+  .pol { width: 220px !important; margin: 0 !important; }
 </style>
 <![endif]-->
+<!-- Web-page only: email apps strip scripts, so this never runs in an inbox and the "View in browser" link stays there. -->
+<script>document.documentElement.className += ' is-web';</script>
 <style>
+  .is-web .view-in-browser { display: none !important; }
   html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; height: 100% !important; }
   * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
   table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
@@ -35,8 +38,8 @@
     .container { width: 100% !important; max-width: 100% !important; }
     .px { padding-left: 24px !important; padding-right: 24px !important; }
     .board { padding-left: 8px !important; padding-right: 8px !important; }
-    .pol { width: 52% !important; }
-    .pol-r { margin-left: -9% !important; margin-top: 14px !important; }
+    .pol { width: 44% !important; }
+    .pol-r { margin-left: -7% !important; margin-top: 12px !important; }
     .pol-cap { font-size: 15px !important; line-height: 20px !important; padding: 10px 0 12px 0 !important; }
     .h-eyebrow { font-size: 30px !important; line-height: 38px !important; letter-spacing: 3px !important; }
     .h-names { font-size: 40px !important; line-height: 46px !important; }
@@ -66,8 +69,8 @@
       <!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
       <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#FFFFFF;">
 
-        <!-- View in browser -->
-        <tr>
+        <!-- View in browser (email only; hidden on the web page by the script in <head>) -->
+        <tr class="view-in-browser">
           <td align="center" style="padding:0 0 12px 0; background-color:#EEF1EA; font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:18px; color:#5C6B50;">
             <a href="https://freddiec19.github.io/Wedding2027/save_the_date.html" style="color:#5C6B50; text-decoration:underline;">View in browser</a>
           </td>
@@ -85,19 +88,19 @@
         <!-- ============ POLAROIDS (live HTML/CSS: overlapping, tilted, pinned) ============ -->
         <!-- Photos keep their aspect ratio (width:100%; height:auto). When sending as an email, change both img src values to full hosted URLs. -->
         <tr>
-          <td align="center" bgcolor="#8BA177" class="board" style="background-color:#8BA177; padding:28px 10px 44px 10px; font-size:0; line-height:0; text-align:center;">
+          <td align="center" bgcolor="#8BA177" class="board" style="background-color:#8BA177; padding:22px 10px 32px 10px; font-size:0; line-height:0; text-align:center;">
 
-            <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="270" valign="top"><![endif]-->
-            <div class="pol pol-l" style="display:inline-block; width:47%; max-width:280px; vertical-align:top; box-sizing:border-box; background-color:#FDFCF8; padding:12px 12px 0 12px; box-shadow:0 8px 18px rgba(0,0,0,0.35); -webkit-transform:rotate(4deg); -ms-transform:rotate(4deg); transform:rotate(4deg);">
+            <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="220" valign="top"><![endif]-->
+            <div class="pol pol-l" style="display:inline-block; width:38%; max-width:220px; vertical-align:top; box-sizing:border-box; background-color:#FDFCF8; padding:10px 10px 0 10px; box-shadow:0 8px 18px rgba(0,0,0,0.35); -webkit-transform:rotate(4deg); -ms-transform:rotate(4deg); transform:rotate(4deg);">
               <div style="width:14px; height:14px; margin:0 auto 12px auto; border-radius:50%; background-color:#C9A24B; box-shadow:0 2px 3px rgba(0,0,0,0.45), inset -2px -2px 3px rgba(0,0,0,0.25), inset 2px 2px 3px rgba(255,255,255,0.55); mso-hide:all;"></div>
               <img src="https://raw.githubusercontent.com/FreddieC19/Wedding2027/main/photos/DSC00811.JPEG" width="256" alt="Fred and Sydney in front of the Eiffel Tower at sunset" style="width:100%; height:auto; display:block; background-color:#C9D4BE;">
-              <div class="pol-cap" style="padding:14px 0 18px 0; font-family:Georgia,'Times New Roman',serif; font-style:italic; font-size:22px; line-height:28px; color:#3E4B34; text-align:center;"></div>
+              <div class="pol-cap" style="padding:12px 0 14px 0; font-family:Georgia,'Times New Roman',serif; font-style:italic; font-size:22px; line-height:28px; color:#3E4B34; text-align:center;"></div>
             </div>
-            <!--[if mso]></td><td width="270" valign="top"><![endif]-->
-            <div class="pol pol-r" style="display:inline-block; width:47%; max-width:280px; margin-left:-6%; margin-top:18px; vertical-align:top; box-sizing:border-box; background-color:#FDFCF8; padding:12px 12px 0 12px; box-shadow:0 8px 18px rgba(0,0,0,0.35); -webkit-transform:rotate(-4deg); -ms-transform:rotate(-4deg); transform:rotate(-4deg);">
+            <!--[if mso]></td><td width="220" valign="top"><![endif]-->
+            <div class="pol pol-r" style="display:inline-block; width:38%; max-width:220px; margin-left:-5%; margin-top:14px; vertical-align:top; box-sizing:border-box; background-color:#FDFCF8; padding:10px 10px 0 10px; box-shadow:0 8px 18px rgba(0,0,0,0.35); -webkit-transform:rotate(-4deg); -ms-transform:rotate(-4deg); transform:rotate(-4deg);">
               <div style="width:14px; height:14px; margin:0 auto 12px auto; border-radius:50%; background-color:#C9A24B; box-shadow:0 2px 3px rgba(0,0,0,0.45), inset -2px -2px 3px rgba(0,0,0,0.25), inset 2px 2px 3px rgba(255,255,255,0.55); mso-hide:all;"></div>
               <img src="https://raw.githubusercontent.com/FreddieC19/Wedding2027/main/photos/DSC00859-2.JPEG" width="256" alt="Black and white close-up of Sydney's hand on Fred's cheek, showing her engagement ring" style="width:100%; height:auto; display:block; background-color:#E3E8DC;">
-              <div class="pol-cap" style="padding:14px 0 18px 0; font-family:Georgia,'Times New Roman',serif; font-style:italic; font-size:22px; line-height:28px; color:#3E4B34; text-align:center;"></div>
+              <div class="pol-cap" style="padding:12px 0 14px 0; font-family:Georgia,'Times New Roman',serif; font-style:italic; font-size:22px; line-height:28px; color:#3E4B34; text-align:center;"></div>
             </div>
             <!--[if mso]></td></tr></table><![endif]-->
 
@@ -131,19 +134,13 @@
             <p class="h-date" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:36px; line-height:38px; color:#2F3A27; letter-spacing:1px;">
               October 8, 2027
             </p>
-            <p style="margin:12px 0 0 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; letter-spacing:3px; text-transform:uppercase; color:#5C6B50;">
+            <p style="margin:12px 0 0 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; letter-spacing:3px; text-transform:uppercase; color:#5C6B50; padding-bottom: 15px;">
               Bellamere Winery &nbsp;&bull;&nbsp; London, Ontario
             </p>
-          </td>
-        </tr>
-
-
-        <!-- CTA -->
-        <tr>
-          <td align="center" class="px" style="padding:40px 40px 12px 40px; background-color:#EEF1EA;">
-            <p style="margin:0 0 20px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; color:#3E4B34;">
+            <p style="margin:0 0 20px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; color:#2F3A27">
               Details, accommodations and RSVP updates will be communicated soon!
             </p>
+            
           </td>
         </tr>
 
