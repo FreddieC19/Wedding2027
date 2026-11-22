@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
@@ -7,8 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="x-apple-disable-message-reformatting">
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-<meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
 <title>Save the Date – Fred &amp; Sydney</title>
 <!--[if mso]>
 <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
@@ -30,30 +29,20 @@
   u + #body a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
   #MessageViewBody a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
  
-  /* ===== Dark mode =====
-     Palette (light -> dark):
-       page bg   #EEF1EA -> #12170F     card bg   #FFFFFF -> #1C2418
-       sage band #8BA177 -> #4A5D3E     headings  #2F3A27 -> #EEF1EA
-       subtitle  #4A5A3E -> #C9D4BE     location/links #5C6B50 -> #A9B99B
-       footer    #6B7A5F -> #8A9B7D     ampersand + divider stay #8BA177 */
-  :root { color-scheme: light dark; supported-color-schemes: light dark; }
-  @media (prefers-color-scheme: dark) {
-    .bg-page  { background-color: #12170F !important; }
-    .bg-card  { background-color: #1C2418 !important; }
-    .bg-green { background-color: #4A5D3E !important; }
-    .t-dark   { color: #EEF1EA !important; }
-    .t-sub    { color: #C9D4BE !important; }
-    .t-mid, .t-link { color: #A9B99B !important; }
-    .t-foot   { color: #8A9B7D !important; }
-  }
-  /* Outlook.com / Outlook apps use attribute selectors instead of the media query */
-  [data-ogsb] .bg-page  { background-color: #12170F !important; }
-  [data-ogsb] .bg-card  { background-color: #1C2418 !important; }
-  [data-ogsb] .bg-green { background-color: #4A5D3E !important; }
-  [data-ogsc] .t-dark   { color: #EEF1EA !important; }
-  [data-ogsc] .t-sub    { color: #C9D4BE !important; }
-  [data-ogsc] .t-mid, [data-ogsc] .t-link { color: #A9B99B !important; }
-  [data-ogsc] .t-foot   { color: #8A9B7D !important; }
+  /* ===== Light mode only =====
+     Dark mode overrides removed; the light palette is used everywhere.
+     Palette, built around primary sage #88976B (Cactus Valley):
+       page bg #EFF1E8   card bg #FFFFFF   sage band/ampersand/divider #88976B
+       headings #353B27  subtitle #525C3C  location/links #5E6A45  footer #6B7551 */
+  :root { color-scheme: light only; supported-color-schemes: light only; }
+  /* Outlook.com / Outlook apps (attribute selectors): pin the light palette so their dark-mode recolouring is overridden */
+  [data-ogsb] .bg-page  { background-color: #EFF1E8 !important; }
+  [data-ogsb] .bg-card  { background-color: #FFFFFF !important; }
+  [data-ogsb] .bg-green { background-color: #88976B !important; }
+  [data-ogsc] .t-dark   { color: #353B27 !important; }
+  [data-ogsc] .t-sub    { color: #525C3C !important; }
+  [data-ogsc] .t-mid, [data-ogsc] .t-link { color: #5E6A45 !important; }
+  [data-ogsc] .t-foot   { color: #6B7551 !important; }
  
   @media screen and (max-width: 620px) {
     .container { width: 100% !important; max-width: 100% !important; }
@@ -71,7 +60,7 @@
   }
 </style>
 </head>
-<body id="body" class="bg-page" style="margin:0; padding:0; background-color:#EEF1EA; word-spacing:normal;">
+<body id="body" class="bg-page" style="margin:0; padding:0; background-color:#EFF1E8; word-spacing:normal;">
  
 <!-- Preheader (hidden inbox preview text) -->
 <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
@@ -79,8 +68,8 @@
   &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp;
 </div>
  
-<div role="article" aria-roledescription="email" aria-label="Save the Date" lang="en" class="bg-page" style="background-color:#EEF1EA;">
-<table role="presentation" class="bg-page" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EEF1EA;">
+<div role="article" aria-roledescription="email" aria-label="Save the Date" lang="en" class="bg-page" style="background-color:#EFF1E8;">
+<table role="presentation" class="bg-page" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EFF1E8;">
   <tr>
     <td align="center" style="padding:24px 12px;">
  
@@ -90,7 +79,7 @@
  
         <!-- Header band -->
         <tr>
-          <td align="center" bgcolor="#8BA177" class="px bg-green" style="background-color:#8BA177; padding:36px 40px 4px 40px;">
+          <td align="center" bgcolor="#88976B" class="px bg-green" style="background-color:#88976B; padding:36px 40px 4px 40px;">
             <p class="h-eyebrow" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:36px; line-height:44px; letter-spacing:6px; text-transform:uppercase; color:#FFFFFF; font-weight:normal;">
               Save the Date
             </p>
@@ -100,7 +89,7 @@
         <!-- ============ POLAROIDS (pre-rendered transparent PNG: tilt, pins and shadows are baked in) ============ -->
         <!-- Just replace the src below with the full hosted URL of polaroids.png. -->
         <tr>
-          <td align="center" bgcolor="#8BA177" class="board bg-green" style="background-color:#8BA177; padding:22px 10px 32px 10px; font-size:0; line-height:0; text-align:center;">
+          <td align="center" bgcolor="#88976B" class="board bg-green" style="background-color:#88976B; padding:22px 10px 32px 10px; font-size:0; line-height:0; text-align:center;">
             <img src="https://raw.githubusercontent.com/FreddieC19/Wedding2027/main/photos/polaroids.png" width="520" alt="Two Polaroid photos: Fred and Sydney in front of the Eiffel Tower at sunset, and a black and white close-up of Sydney's hand on Fred's showing her engagement ring" style="width:100%; max-width:520px; height:auto; display:block; margin:0 auto; border:0;">
           </td>
         </tr>
@@ -108,11 +97,11 @@
         <!-- Names + date -->
         <tr>
           <td align="center" class="px bg-card" style="padding:44px 40px 12px 40px; background-color:#FFFFFF;">
-            <p class="h-sub t-sub" style="margin:0 0 14px 0; font-family:Georgia,'Times New Roman',serif; font-size:16px; line-height:26px; color:#4A5A3E; font-style:italic;">
+            <p class="h-sub t-sub" style="margin:0 0 14px 0; font-family:Georgia,'Times New Roman',serif; font-size:16px; line-height:26px; color:#525C3C; font-style:italic;">
               We're getting married!
             </p>
-            <h1 class="h-names t-dark" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:50px; line-height:56px; font-weight:normal; color:#2F3A27;">
-              Fred <span style="color:#8BA177;">&amp;</span> Sydney
+            <h1 class="h-names t-dark" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:50px; line-height:56px; font-weight:normal; color:#353B27;">
+              Fred <span style="color:#88976B;">&amp;</span> Sydney
             </h1>
           </td>
         </tr>
@@ -121,7 +110,7 @@
         <tr>
           <td align="center" class="bg-card" style="padding:20px 40px; background-color:#FFFFFF;">
             <table role="presentation" align="center" width="80" cellpadding="0" cellspacing="0" border="0" style="width:80px; min-width:80px;">
-              <tr><td width="80" height="2" bgcolor="#8BA177" style="width:80px; min-width:80px; height:2px; line-height:2px; font-size:2px; mso-line-height-rule:exactly; background-color:#8BA177;"><div style="width:80px; min-width:80px; height:2px; line-height:2px; font-size:2px;">&nbsp;</div></td></tr>
+              <tr><td width="80" height="2" bgcolor="#88976B" style="width:80px; min-width:80px; height:2px; line-height:2px; font-size:2px; mso-line-height-rule:exactly; background-color:#88976B;"><div style="width:80px; min-width:80px; height:2px; line-height:2px; font-size:2px;">&nbsp;</div></td></tr>
             </table>
           </td>
         </tr>
@@ -129,13 +118,13 @@
         <!-- Date block -->
         <tr>
           <td align="center" class="px bg-card" style="padding:4px 40px 8px 40px; background-color:#FFFFFF;">
-            <p class="h-date t-dark" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:36px; line-height:38px; color:#2F3A27; letter-spacing:1px;">
+            <p class="h-date t-dark" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:36px; line-height:38px; color:#353B27; letter-spacing:1px;">
               Friday, October 8, 2027
             </p>
-            <p class="t-mid" style="margin:12px 0 0 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; letter-spacing:3px; text-transform:uppercase; color:#5C6B50; padding-bottom: 15px;">
+            <p class="t-mid" style="margin:12px 0 0 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; letter-spacing:3px; text-transform:uppercase; color:#5E6A45; padding-bottom: 15px;">
               Bellamere Winery &nbsp;&bull;&nbsp; London, Ontario
             </p>
-            <p class="t-dark" style="margin:0 0 20px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; color:#2F3A27">
+            <p class="t-dark" style="margin:0 0 20px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:24px; color:#353B27">
               Details, accommodations and RSVP updates will be communicated soon!
             </p>
  
@@ -144,7 +133,7 @@
  
         <!-- Footer band -->
         <tr>
-          <td bgcolor="#8BA177" height="14" class="bg-green" style="background-color:#8BA177; height:14px; line-height:14px; font-size:1px;">&nbsp;</td>
+          <td bgcolor="#88976B" height="14" class="bg-green" style="background-color:#88976B; height:14px; line-height:14px; font-size:1px;">&nbsp;</td>
         </tr>
  
       </table>
@@ -153,14 +142,14 @@
       <!-- Legal footer -->
       <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px;">
         <tr>
-          <td align="center" class="px t-foot" style="padding:20px 40px 0 40px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:17px; color:#6B7A5F;">
+          <td align="center" class="px t-foot" style="padding:20px 40px 0 40px; font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:17px; color:#6B7551;">
             Questions? Reply to this email.
           </td>
         </tr>
         <!-- View in browser -->
         <tr>
-          <td align="center" class="px t-mid" style="padding:10px 40px 0 40px; font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:18px; color:#5C6B50;">
-            Trouble viewing this email? <a href="https://freddiec19.github.io/Wedding2027/save_the_date.html" class="t-link" style="color:#5C6B50; text-decoration:underline;">View in browser</a>
+          <td align="center" class="px t-mid" style="padding:10px 40px 0 40px; font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:18px; color:#5E6A45;">
+            Trouble viewing this email? <a href="https://freddiec19.github.io/Wedding2027/save_the_date.html" class="t-link" style="color:#5E6A45; text-decoration:underline;">View in browser</a>
           </td>
         </tr>
       </table>
@@ -171,4 +160,3 @@
 </div>
 </body>
 </html>
- 
